@@ -118,9 +118,9 @@ fetch(url)
 // Question 7c - Create a function that receives the above response as a parameter --- 1 mark
 //               You can use this function for next two steps
 
-function response7d(response) {
 
     
+function response7d(response) {}
 
 
 // Question 7d - Dynamically create the following tags, store the received data and append everything to question7d div
@@ -133,7 +133,7 @@ function response7d(response) {
 
 
 
-}
+
 
 
 
