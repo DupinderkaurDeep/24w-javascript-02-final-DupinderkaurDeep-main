@@ -96,22 +96,46 @@ let car1 = {
 //          There is no point in using other student's url, you might receive 0 from this step ahead + academic misconduct!!!
 
 // Create your personalized URL and store it in a const/variable below --- 2 marks
-const apiKey = "200553418";
 
-
+const apiKey = 200553418;
+const url = "https://lamp.computerstudi.es/~Priyansh001/js02/test2/api/users.php?api_key=${apiKey}";
 
 // Question 7b - Use the above URL to create a fetch request and log the response to your console --- 4 marks
+
+
+fetch(url)
+  .then(response => 
+    response.json())
+  .then(data => 
+    console.log(data))
+   .catch(error => 
+    console.error('Error:', error));
+  
+
 
 // Take a break, drink some water and observe your response in any json reader or postman or your browser...
 
 // Question 7c - Create a function that receives the above response as a parameter --- 1 mark
 //               You can use this function for next two steps
 
-// Question 7d - Dynamically create the following tags, store the received data and append everyting to question7d div
+function response7d(response) {
+
+    
+
+
+// Question 7d - Dynamically create the following tags, store the received data and append everything to question7d div
 // Received Personal ID - h2 tag
 // Received Personal First Name - h3 tag
 // Received Personal Last Name - h3 tag
 // Received Personal Image - img tag  --- 5 marks
+
+
+
+
+
+}
+
+
 
 // Question 7e - For the received random data, create a loop, create appropriate table tags(td|tr|th|tbody), 
 //               and similarly like previous question append everything to question7e div --- 10 marks
